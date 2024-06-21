@@ -106,7 +106,8 @@ const addElementToBox = (evt) => {
 
 //logic for resetting the playing area
 const removeAllElementsFromAllBoxes = () => {
-
+    const playerSelector = document.querySelector("#chnagePlayer");
+    playerSelector.textContent = 1;
     hiddenCard.style.display = "";
 
     boxes.forEach( (box) => {
