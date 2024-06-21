@@ -1,0 +1,145 @@
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #192A32;
+}
+
+main {
+  width: 350px;
+  margin: auto;
+  margin-top: 5vh;
+  position: relative;
+}
+main header {
+  padding: 0 5px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+main header .xo #x, main header .xo #o {
+  width: 25px;
+}
+main header #currentTurn {
+  background-color: #1F3540;
+  height: 90%;
+  border-radius: 7px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+main header #currentTurn p {
+  padding: 5px;
+  color: #A7BFC9;
+}
+main header #currentTurn p:hover {
+  cursor: default;
+}
+main header #reset-btn-container button {
+  background-color: #A7BFC9;
+  border: 0;
+  height: 90%;
+  width: 60px;
+  transition: transform 0.1s ease;
+  box-shadow: 0px 5px 5px 0px rgba(50, 49, 49, 0.75);
+}
+main header #reset-btn-container button:hover {
+  cursor: pointer;
+}
+main header #reset-btn-container button:active {
+  transform: scale(0.95);
+}
+main .hidden-card {
+  position: absolute;
+  height: 200px;
+  width: 250px;
+  background-color: aqua;
+  opacity: 0.8;
+  top: 25%;
+  left: 15%;
+  display: none;
+}
+main .hidden-card #winner-info {
+  word-wrap: normal;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 75px;
+  margin-left: 75px;
+  margin-bottom: 50px;
+}
+main .hidden-card #close {
+  width: 70px;
+  margin-left: 90px;
+}
+main .playing-area {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 110px 110px 110px;
+  grid-template-rows: 110px 110px 110px;
+}
+main .playing-area .playing-boxes {
+  cursor: pointer;
+  background-color: #1F3540;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+main .playing-area .playing-boxes .played-img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin: 5px 5px;
+}
+main footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 5px;
+  flex-wrap: wrap;
+}
+main footer .player1-info-container {
+  padding: 5px 10px;
+  border-radius: 7px;
+  background-color: #31C4BE;
+}
+main footer .ties-info-container {
+  padding: 5px 10px;
+  border-radius: 7px;
+  background-color: #A8BEC9;
+}
+main footer .player2-info-container {
+  padding: 5px 10px;
+  border-radius: 7px;
+  background-color: #F2B237;
+}
+
+@media (min-width: 560px) {
+  main {
+    width: 440px;
+    margin-top: 8vh;
+  }
+  main .hidden-card {
+    height: 250px;
+    width: 300px;
+  }
+  main .hidden-card #winner-info {
+    width: 100px;
+    margin: 100px;
+  }
+  main .hidden-card #close {
+    width: 70px;
+    margin-left: 115px;
+  }
+  main .playing-area {
+    grid-template-columns: 140px 140px 140px;
+    grid-template-rows: 140px 140px 140px;
+  }
+  main .playing-area .playing-boxes .played-img {
+    height: 130px;
+    width: 130px;
+  }
+}/*# sourceMappingURL=style.css.map */
