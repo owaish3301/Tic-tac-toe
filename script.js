@@ -94,7 +94,7 @@ const addElementToBox = (evt) => {
     const result = checkWon(currentPlayer);
     if (result) return;
 
-    changePlayer(currentPlayer === "p1" ? 2 : 1);
+    changePlayer(currentPlayer === "p1" ? 1 : 2);
     currentPlayer = currentPlayer === "p1" ? "p2":"p1";
 
     const img = evt.srcElement.querySelector("img");
